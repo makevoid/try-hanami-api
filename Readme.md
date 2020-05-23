@@ -6,7 +6,7 @@ Features of this sample app:
 
 - simple example, 3 routes (+ the seed route)
 - API app
-- DB: Redis / ReJSON (using [redijson_models](https://github.com/makevoid/redijson_models))
+- DB: Redis with ReJSON module (ruby model apy using [redis_rejson_models](https://github.com/makevoid/redijson_models))
 
 ### Requirements
 
