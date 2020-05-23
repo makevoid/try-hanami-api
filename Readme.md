@@ -1,18 +1,18 @@
-# Sample Hanami::API app 
+# Sample Hanami::API app
 
-Shows how easy it is to achieve a very performant API application with very little code. 
+Shows how easy it is to achieve a very performant API application with very little code.
 
 Features of this sample app:
 
 - simple example, 3 routes (+ the seed route)
 - API app
-- DB: Redis with ReJSON module (ruby model apy using [redis_rejson_models](https://github.com/makevoid/redijson_models))
+- DB: Redis / ReJSON (using [RedisRejson_models](https://github.com/makevoid/RedisRejson_models))
 
 ### Requirements
 
-- ruby 2.7 installed (hanami-api requires it atm.) 
+- ruby 2.7 installed (hanami-api requires it atm.)
 - bundler gem installed (`gem i bundler`)
-- redis with ReJSON module running 
+- redis with ReJSON module running
 
 ### Install
 
@@ -28,7 +28,7 @@ Features of this sample app:
 then visit: <http://localhost:3000>
 
 
-### Run with docker 
+### Run with docker
 
 This method will run Redis with Re-JSON by default
 
@@ -40,7 +40,7 @@ then visit: <http://localhost:3000>
 
 ### Run only redis via docker
 
-    
+
     docker-compose up db
 
 ---

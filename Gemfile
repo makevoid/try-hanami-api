@@ -10,7 +10,7 @@ gem "hanami-api", '~> 0.1.1', require: "hanami/api"
 # gem "hanami-api", git: "https://github.com/hanami/api.git"
 
 gem "redis"
-gem 'redijson_models', '~> 0.9.0'
+gem 'redis_rejson_models', '~> 0.9.5'
 
 # TODO: remove this
 gem "betterlorem"

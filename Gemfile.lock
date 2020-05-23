@@ -1,17 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    axiom-types (0.1.1)
-      descendants_tracker (~> 0.0.4)
-      ice_nine (~> 0.11.0)
-      thread_safe (~> 0.3, >= 0.3.1)
     betterlorem (0.1.2)
-    coercible (1.0.0)
-      descendants_tracker (~> 0.0.1)
-    descendants_tracker (0.0.4)
-      thread_safe (~> 0.3, >= 0.3.1)
     dry-inflector (0.2.0)
-    equalizer (0.0.11)
     hanami-api (0.1.1)
       hanami-router (~> 2.0.alpha)
     hanami-router (2.0.0.alpha3)
@@ -20,7 +11,6 @@ GEM
       rack (~> 2.0)
     hansi (0.2.0)
     hashie (4.1.0)
-    ice_nine (0.11.2)
     inflecto (0.0.2)
     json (2.3.0)
     mustermann (1.1.1)
@@ -33,22 +23,17 @@ GEM
     puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.2)
-    redijson_models (0.9.0)
+    redis (3.3.5)
+    redis_rejson_models (0.9.5)
       dry-inflector (~> 0.2.0)
       redis (~> 3.3.0)
       rejson-rb (~> 1.0.0)
-      virtus (~> 1.0.5)
-    redis (3.3.5)
+      shallow_attributes (~> 0.9.5)
     rejson-rb (1.0.0)
       json (~> 2.0)
       redis (~> 3.0)
     ruby2_keywords (0.0.2)
-    thread_safe (0.3.6)
-    virtus (1.0.5)
-      axiom-types (~> 0.1)
-      coercible (~> 1.0)
-      descendants_tracker (~> 0.0, >= 0.0.3)
-      equalizer (~> 0.0, >= 0.0.9)
+    shallow_attributes (0.9.5)
 
 PLATFORMS
   ruby
@@ -61,8 +46,8 @@ DEPENDENCIES
   oj
   puma
   rack
-  redijson_models (~> 0.9.0)
   redis
+  redis_rejson_models (~> 0.9.5)
 
 BUNDLED WITH
    2.1.4

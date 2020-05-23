@@ -20,7 +20,7 @@ R = Redis.new redis_config
 # R.flushdb if APP_ENV == "development" # && ENV["RESET_REDIS"] == "1"
 
 # configure rejson models
-include RediJsonModels
+include RedisRejsonModels
 RJ.configure redis: R
 
 # require your libs/models here
