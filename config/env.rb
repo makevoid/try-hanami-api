@@ -1,11 +1,6 @@
 require 'bundler'
 APP_ENV = ENV["RACK_ENV"] || "development"
 
-# if APP_ENV == "development" # TODO: uncomment / delete this
-  # require dev dependencies
-  require 'yaml'
-# end
-
 Encoding.default_internal = Encoding::UTF_8
 Encoding.default_external = Encoding::UTF_8
 
@@ -27,7 +22,6 @@ R = Redis.new redis_config
 # configure rejson models
 include RediJsonModels
 RJ.configure redis: R
-
 
 # require your libs/models here
 #
