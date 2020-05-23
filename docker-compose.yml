@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+    image: makevoid/app
+    ports:
+      - 3000:3000
+    environment:
+      - DOCKER=1
+      - RACK_ENV="production"
+    depends_on:
+      - db
+
+  db:
+    image: redislabs/rejson:latest
+    ports:
+    - 6379:6379
+    volumes:
+      - redis_data:/data/redis
+    restart: always
+    # TODO: enable appendonly + load rejson module - note: entrypoint: redis-server --appendonly yes
+
+volumes:
+  redis_data:
