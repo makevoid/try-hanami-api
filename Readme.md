@@ -1,9 +1,17 @@
-# App
+# Sample Hanami::API app 
 
-simple Roda + Haml boilerplate app to quick-start your roda, view based apps
+Shows how easy it is to achieve a very performant API application with very little code. 
 
-includes Bulma CSS ( http://bulma.io )
+Features of this sample app:
 
+- simple example, 3 routes (+ the seed route)
+- API app
+- DB: Redis / ReJSON (using [redijson_models](https://github.com/makevoid/redijson_models))
+
+### Requirements
+
+- ruby 2.7 installed (hanami-api requires it atm.) 
+- bundler gem installed (`gem i bundler`)
 
 ### Install
 
@@ -13,7 +21,7 @@ includes Bulma CSS ( http://bulma.io )
 ### Run
 
 
-    bundle exec rackup -p 3000
+    rake
 
 
 then visit: <http://localhost:3000>
