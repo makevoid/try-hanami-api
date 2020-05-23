@@ -7,7 +7,22 @@ class App < Hanami::API
   include ViewHelpers
 
   get "/" do
-    user = { id: 1, name: "test" }
-    json user
+    redirect "/phrases"
   end
+
+  get "/phrases" do |id|
+    phrases = Phrase.all
+    json phrases
+  end
+
+  get "/phrases/:id" do |id|
+    phrases = Phrase.get params[:id]
+    json phrases
+  end
+
+  # TODO: remove
+  get "/seed" do
+    redirect "/phrases"
+  end
+
 end

@@ -1,4 +1,4 @@
-# TODO: rename phrase to sentence 
+# TODO: rename phrase to sentence
 
 class Phrase
   include Virtus.model
@@ -7,7 +7,6 @@ class Phrase
 
   attribute :id,      Integer
   attribute :text,    String
-  attribute :status,  String # should be Enum["ok", "deleted"]
 
   # def ...
   #

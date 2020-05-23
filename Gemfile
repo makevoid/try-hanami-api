@@ -10,5 +10,8 @@ gem "hanami-api", '~> 0.1.1', require: "hanami/api"
 gem "redis"
 gem 'redijson_models', '~> 0.9.0'
 
+# TODO: remove this
+gem "betterlorem"
+
 # dev server
 gem 'puma'
