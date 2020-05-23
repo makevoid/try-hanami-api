@@ -1,4 +1,4 @@
-module ViewHelpers
+module RouteHelpers
 
   # def labelize(string)
   #   Inflecto.humanize(Inflecto.underscore(string.to_s)).capitalize
