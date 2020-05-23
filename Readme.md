@@ -27,5 +27,14 @@ Features of this sample app:
 then visit: <http://localhost:3000>
 
 
+### Run with docker 
+
+
+    docker-compose up
+
+
+then visit: <http://localhost:3000>
+
+---
 
 @makevoid
