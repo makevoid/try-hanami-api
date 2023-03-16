@@ -22,7 +22,7 @@ GEM
     oj (3.10.6)
     puma (4.3.5)
       nio4r (~> 2.0)
-    rack (2.2.2)
+    rack (2.2.6.4)
     redis (3.3.5)
     redis_rejson_models (0.9.5)
       dry-inflector (~> 0.2.0)
